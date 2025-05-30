@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Newtonsoft.Json;
-public static class juego
+public static class sala
 {
     [JsonProperty]
-    public static List<string> listClaves { get; private set; }
+    public static string clave { get; private set; }
     [JsonProperty]
-    public static int sala { get; private set; }
+    public static string pista { get; private set; }
 
     public static string ObjectToString<T>(T? obj)
     {
@@ -20,5 +16,9 @@ public static class juego
             return default;
         else
             return JsonConvert.DeserializeObject<T>(txt);
+    }
+
+    public static bool comprobarClave(string claveProbada){
+        return clave==claveProbada;
     }
 }
