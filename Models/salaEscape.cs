@@ -1,16 +1,18 @@
 using Newtonsoft.Json;
-public static class salaEscape
+public class salaEscape
 {
     [JsonProperty]
-    private static Dictionary<int, string> rtasCorrectas;
+    public List<string> rtasCorrectas;
     [JsonProperty]
-    private static Dictionary<int, string> pista;
+    private List<string> pista;
+    [JsonProperty]
+    public int nroSala;
 
-    public static string ObjectToString<T>(T? obj)
+    public string ObjectToString<T>(T? obj)
     {
         return JsonConvert.SerializeObject(obj);
     }
-    public static T? StringToobject<T>(string txt)
+    public T? StringToobject<T>(string txt)
     {
         if (string.IsNullOrEmpty(txt))
             return default;
@@ -18,30 +20,33 @@ public static class salaEscape
             return JsonConvert.DeserializeObject<T>(txt);
     }
 
-    public static void inicializarJuego()
+    public void inicializarJuego()
     {
-        rtasCorrectas = new Dictionary<int, string>();
-        pista = new Dictionary<int, string>();
+        rtasCorrectas = new List<string>();
+        pista = new List<string>();
+        nroSala=1;
         string clave1 = DateTime.Now.ToString("HHmm");
-        rtasCorrectas.Add(1, clave1);
-        pista.Add(1, "Su celda está cerrada con un candado digital que se abre con una clave. ¡Cuidado! La clave no es siempre igual. Adivinanza: ““No tengo forma, pero marcó el ritmo de tu encierro. Descíframe antes de que yo me transforme.”");
-        rtasCorrectas.Add(2, "espejo");
-        pista.Add(2, "¡La celda ya está abierta! Pero hay muchos guardias y la luz está prendida, necesitamos apagarla. Adivinanza: No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.");
-        rtasCorrectas.Add(3,"a");
-        pista.Add(3,"~/imagenes/fotoPista3");
-        rtasCorrectas.Add(4,"a");
-        pista.Add(4, "¡Homero salió de la celda! Hay muchos guardias en el pasillo, ¿Qué podemos hacer para que no nos vean? ¡Tendrás que cortar el cable que concuerde con el primero para cortar la luz!");
-        rtasCorrectas.Add(5,"a");
-        pista.Add(5, "~/imagenes/fotoPista5");
+        rtasCorrectas.Add("3");
+        pista.Add("Adivinanza: “No tengo forma, pero marcó el ritmo de tu encierro. Descíframe antes de que yo me transforme.”");
+        rtasCorrectas.Add("espejo");
+        pista.Add("Adivinanza: No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.");
+        rtasCorrectas.Add("a");
+        pista.Add("");
+        rtasCorrectas.Add("a");
+        pista.Add("Los cables en la izquierda tienen un número en binario y lo tienen que pasar a hexadecimal, ese número estará en uno de los cables a la derecha");
+        rtasCorrectas.Add("a");
+        pista.Add("~/imagenes/fotoPista5");
 
     }
-    public static bool comprobarClave(string claveProbada, int sala)
+    public void comprobarClave(string claveProbada)
     {
-        return rtasCorrectas[sala] == claveProbada;
+        if(rtasCorrectas[nroSala-1] == claveProbada){
+            nroSala++;
+        }
     }
 
-    public static string devolverPista(int sala)
+    public string devolverPista()
     {
-        return pista[sala];
+        return pista[nroSala-1];
     }
 }

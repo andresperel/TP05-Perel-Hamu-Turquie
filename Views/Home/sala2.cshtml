@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "sala2";
+}
+
+<h1>¡La celda ya está abierta! </h1>
+<h2>Hay muchos guardias y la luz está prendida, necesitamos apagarla.</h2>
+<form action='@Url.Action("jugar", "Home")' method="POST" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="intento"/>
+    <input type="submit" name="Guardar"/>
+</form>

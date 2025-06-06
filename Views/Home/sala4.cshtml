@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "sala4";
+}
+
+<h2>@ViewBag.pista</h2>
+<form action='@Url.Action("jugar", "Home")" method="POST" enctype="application/x-www-form-urlencoded'>
+    <input type="number" name="intento"/>
+    <input type="submit" name="Guardar"/>
+</form>
