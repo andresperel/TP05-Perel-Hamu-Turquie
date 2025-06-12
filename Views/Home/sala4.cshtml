@@ -2,7 +2,8 @@
     ViewData["Title"] = "sala4";
 }
 
-<h2>@ViewBag.pista</h2>
+<a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
+@if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
 <form action='@Url.Action("jugar", "Home")" method="POST" enctype="application/x-www-form-urlencoded'>
     <input type="number" name="intento"/>
     <input type="submit" name="Guardar"/>

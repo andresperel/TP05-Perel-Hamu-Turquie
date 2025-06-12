@@ -25,18 +25,20 @@ public class salaEscape
         rtasCorrectas = new List<string>();
         pista = new List<string>();
         nroSala=1;
-        string clave1 = DateTime.Now.ToString("HHmm");
-        rtasCorrectas.Add("3");
-        pista.Add("Adivinanza: “No tengo forma, pero marcó el ritmo de tu encierro. Descíframe antes de que yo me transforme.”");
+        rtasCorrectas.Add("martin lousteau");
+        pista.Add("“No tengo forma, pero marcó el ritmo de tu encierro. Descíframe antes de que yo me transforme.”");
         rtasCorrectas.Add("espejo");
-        pista.Add("Adivinanza: No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.");
+        pista.Add("“No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.”");
         rtasCorrectas.Add("a");
-        pista.Add("");
+        pista.Add("Debes encontrar un alicate");
         rtasCorrectas.Add("a");
-        pista.Add("Los cables en la izquierda tienen un número en binario y lo tienen que pasar a hexadecimal, ese número estará en uno de los cables a la derecha");
+        pista.Add("Los cables en la izquierda tienen números en binario y lo tienen que pasar a hexadecimal, el cable que coincida es el que deberán tocar.");
         rtasCorrectas.Add("a");
-        pista.Add("~/imagenes/fotoPista5");
+        pista.Add("La 1 debes ir a la izquierda.");
 
+    }
+    public string sacarHora(){
+        return DateTime.Now.ToString("HHmm");
     }
     public void comprobarClave(string claveProbada)
     {

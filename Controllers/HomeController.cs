@@ -26,14 +26,14 @@ public class HomeController : Controller
         HttpContext.Session.SetString("sala", objeto.ObjectToString(sala));
         return View("intro");
     }
-    public IActionResult jugar(string intento)
+    public IActionResult jugar(string intento, bool pidioPista)
     {
         salaEscape sala = objeto.StringToObject<salaEscape>(HttpContext.Session.GetString("sala"));
-        
+        sala.rtasCorrectas[0]=sala.sacarHora();
         sala.comprobarClave(intento);
+        ViewBag.pidioPista=pidioPista;
         ViewBag.pista = sala.devolverPista();
         HttpContext.Session.SetString("sala", objeto.ObjectToString(sala));
-
         return View("sala" + sala.nroSala);
     }
 

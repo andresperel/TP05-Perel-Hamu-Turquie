@@ -4,8 +4,11 @@
 
 <h1>¡Comienza la fuga!</h1>
 <h2>Su celda está cerrada con un candado digital que se abre con una clave. ¡Cuidado! La clave no es siempre igual.</h2>
+<a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
 
-<form action='@Url.Action("jugar", "Home")' method="POST" enctype="application/x-www-form-urlencoded">
+@if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
+
+<form action='@Url.Action("jugar", "Home", new {pidioPista=false})' method="POST" enctype="application/x-www-form-urlencoded">
     Ingrese su intento: <input type="text" name="intento"/>
     <input type="submit" value="Guardar"/>
 </form>
