@@ -1,8 +1,10 @@
 @{
     ViewData["Title"] = "sala5";
 }
+<section class = "sala5">
 
 <h1>¡Un puente y Homero es libre!<h1>
 
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
 @if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
+</section>

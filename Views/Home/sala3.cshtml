@@ -1,7 +1,8 @@
 @{
     ViewData["Title"] = "sala3";
 }
- <img src= "~/imagenes/fotoPista3.png" alt="foto base">  
+<section class = "sala3">
 
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
 @if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
+</section>

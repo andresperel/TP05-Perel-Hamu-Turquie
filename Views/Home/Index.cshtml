@@ -1,9 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-
+<section class = "Index">
 <h1>¡Bienvenidos a la famosa sala de escape de Homero Simpson!</h1>
-<ul>
-    <li><a href= '@Url.Action("intro","Home")'>Comenzar el juego</a></li>
-    <li><a href= '@Url.Action("creditos","Home")'>Conocé a los creadores</a></li>
-</ul>
+<a href= '@Url.Action("intro","Home")'>Comenzar el juego</a>
+<a href= '@Url.Action("creditos","Home")'>Conocé a los creadores</a>
+</section>

@@ -2,8 +2,9 @@
     ViewData["Title"] = "sala1";
 }
 
-<h1>¡Comienza la fuga!</h1>
-<h2>Su celda está cerrada con un candado digital que se abre con una clave. ¡Cuidado! La clave no es siempre igual.</h2>
+<section class = "sala1">
+
+<h1>¡Comienza la fuga! Su celda está cerrada con un candado digital que se abre con una clave. ¡Cuidado! La clave no es siempre igual.</h1>
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
 
 @if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
@@ -12,3 +13,4 @@
     Ingrese su intento: <input type="text" name="intento"/>
     <input type="submit" value="Guardar"/>
 </form>
+</section>

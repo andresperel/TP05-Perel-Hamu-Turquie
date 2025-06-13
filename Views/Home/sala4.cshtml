@@ -1,6 +1,7 @@
 @{
     ViewData["Title"] = "sala4";
 }
+<section class = "sala4">
 
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
 @if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
@@ -8,3 +9,4 @@
     <input type="number" name="intento"/>
     <input type="submit" name="Guardar"/>
 </form>
+<section>
