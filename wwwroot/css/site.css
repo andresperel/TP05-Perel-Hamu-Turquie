@@ -8,16 +8,25 @@ html {
     font-size: 16px;
   }
 }
+header, footer{
+  width:0;
+  height:0;
+}
 section{
-  padding-bottom:40%;
-  margin:0;
+  height: 100vh
+}
+h3{
+  font-size: 40px;
+  color: white;
 }
 .creditos{
   background-image: url('../imagenes/fondocreditos.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  background-color: cadetblue;
+  background-position: center;
+  height: 100vh;
 }
 .creditos div{
   display: inline-block;
@@ -56,17 +65,22 @@ section form{
 }
 .fin{
   background-image: url('../imagenes/fondoFin.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
+  height: 100vh;
 }
 
 .Index{
   background-image: url('../imagenes/fondoIndex.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
-}
+  height: 100vh;}
 .Index h1{
   Color:white;
   font-size: 50px;
@@ -85,9 +99,12 @@ section form{
 
 .intro{
   background-image: url('../imagenes/fondoIntro.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
+  height: 100vh;
 }
 .intro p{
   width:80%;
@@ -107,9 +124,12 @@ section form{
 }
 .sala1{
   background-image: url('../imagenes/fondoSala1.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
+  height: 100vh;
 }
 .sala1 h1
 {
@@ -124,9 +144,12 @@ section form{
 }
 .sala2{
   background-image: url('../imagenes/fondoSala2.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
+  height: 100vh;
 }
 .sala2 h1
 {
@@ -141,26 +164,85 @@ section form{
   text-align: center;
 }
 .sala3{
-  background-image: url('../imagenes/fondoSala3.png');
+  background-image: url('../imagenes/fondoSala3.jpg');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
+  height: 100vh;
+}
+.sala3 .imagenes a{
+  background: none;
+  padding:0;
+  float:left;
+  border: none;
+}
+.img-jabon {
+  display: block;
+  margin: 0 auto;
+  margin-left: 500px; 
+}
+.img-matafuegos {
+  margin: 0 auto;
+  float: left;
+  margin-left: -110px; 
+}
+.img-cepillo {
+  display: block;
+  margin: 0 auto;
+  margin-right: 50px; 
+}
+.img-tijera {
+  display: block;
+  margin: 0 auto;
+  margin-left: 500px; 
+}
+.img-pinza {
+  display: block;
+  margin: 0 auto;
+  margin-left: 500px; 
+}
+.img-parlante {
+  display: block;
+  margin: 0 auto;
+  margin-left: 500px; 
+}
+.sala3 a img:hover{
+  width: 110%;  
+}
+.sala3 img{
+  width: 40%;
+}
+
+.sala4{
+  top: 10%; left: 10%;
+}
+.sala3 h3{
+  color: white;
 }
 .sala4{
   background-image: url('../imagenes/fondoSala4.png');
+  margin: 0;
+  padding: 0;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat; 
-}
-.sala5{
-  background-image: url('../imagenes/fondoSala5.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; 
+  height: 100vh;
 }
 
-
-
+footer{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(233, 231, 231);
+  border-top: 1px solid #e9ecef;
+}
+footer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(233, 231, 231);
+  border-top: 1px solid #e9ecef;
+}
 footer {
   margin-top: 10px;
   padding: 10px;

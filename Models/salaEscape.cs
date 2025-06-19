@@ -25,16 +25,14 @@ public class salaEscape
         rtasCorrectas = new List<string>();
         pista = new List<string>();
         nroSala=1;
-        rtasCorrectas.Add("martin lousteau");
-        pista.Add("“No tengo forma, pero marcó el ritmo de tu encierro. Descíframe antes de que yo me transforme.”");
+        rtasCorrectas.Add("a");
+        pista.Add("“No tengo forma, pero marco el ritmo de tu encierro. Descíframe antes de que yo me transforme.”");
         rtasCorrectas.Add("espejo");
         pista.Add("“No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.”");
         rtasCorrectas.Add("a");
-        pista.Add("Debes encontrar un alicate");
-        rtasCorrectas.Add("a");
-        pista.Add("Los cables en la izquierda tienen números en binario y lo tienen que pasar a hexadecimal, el cable que coincida es el que deberán tocar.");
-        rtasCorrectas.Add("a");
-        pista.Add("La 1 debes ir a la izquierda.");
+        pista.Add("Debes encontrar una herramienta que lo ayude a escapar");
+        rtasCorrectas.Add("0x32");
+        pista.Add("La respuesta debe estar escrita en hexadecimal y minuscula");
 
     }
     public string sacarHora(){

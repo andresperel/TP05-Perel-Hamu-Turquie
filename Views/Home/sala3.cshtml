@@ -4,5 +4,14 @@
 <section class = "sala3">
 
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
-@if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
+@if(ViewBag.pidioPista) {<h3>@ViewBag.pista</h3>}
+
+<article class="imagenes">
+<a href='@Url.Action("jugar","Home", new {intento="b"})'> <img src="/imagenes/jabon.png" class="img-jabon"/></a>
+<a href='@Url.Action("jugar","Home", new {intento="b"})'> <img src = "/imagenes/matafuegos.png" class="img-matafuegos"/></a>
+<a href='@Url.Action("jugar","Home", new {intento="b"})'> <img src = "/imagenes/cepillo.png"class="img-cepillo"/></a>
+<a href='@Url.Action("jugar","Home", new {intento="b"})'> <img src = "/imagenes/tijera.png"class="img-tijera"/></a>
+<a href='@Url.Action("jugar","Home", new {intento="a"})'> <img src = "/imagenes/pinza.png" class="img-pinza"/></a>
+<a href='@Url.Action("jugar","Home", new {intento="b"})'> <img src = "/imagenes/parlante.png"class="img-parlante"/></a>
+</article>
 </section>
