@@ -181,7 +181,7 @@ section form{
 .img-jabon {
   display: block;
   margin: 0 auto;
-  margin-left: 500px; 
+  margin-left: -800px; 
 }
 .img-matafuegos {
   margin: 0 auto;
@@ -191,7 +191,7 @@ section form{
 .img-cepillo {
   display: block;
   margin: 0 auto;
-  margin-right: 50px; 
+  margin-left: 900px; 
 }
 .img-tijera {
   display: block;
@@ -201,15 +201,15 @@ section form{
 .img-pinza {
   display: block;
   margin: 0 auto;
-  margin-left: 500px; 
+  margin-left: 50px; 
 }
 .img-parlante {
   display: block;
   margin: 0 auto;
-  margin-left: 500px; 
+  margin-left: -600px; 
 }
 .sala3 a img:hover{
-  width: 110%;  
+  width: 50%;  
 }
 .sala3 img{
   width: 40%;
@@ -222,7 +222,12 @@ section form{
   color: white;
 }
 .sala4{
-  background-image: url('../imagenes/fondoSala4.png');
+  background-color: black;
+  height: 100vh;
+  
+}
+.sala5{
+  background-image: url('../imagenes/fondoSala5.png');
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -230,6 +235,7 @@ section form{
   background-position: center;
   height: 100vh;
 }
+
 
 footer{
   margin-top: 10px;

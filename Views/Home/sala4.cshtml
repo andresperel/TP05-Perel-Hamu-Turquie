@@ -4,9 +4,12 @@
 <section class = "sala4">
 
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
-@if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
-<form action='@Url.Action("jugar", "Home")" method="POST" enctype="application/x-www-form-urlencoded'>
-    <input type="number" name="intento"/>
+@if(ViewBag.pidioPista) {<h3>@ViewBag.pista</h3>}
+
+<img src="/imagenes/fondoSala4.png"/>
+
+<form action='@Url.Action("jugar", "Home", new {pidioPista=false})' method="POST" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="intento"/>
     <input type="submit" name="Guardar"/>
 </form>
 <section>

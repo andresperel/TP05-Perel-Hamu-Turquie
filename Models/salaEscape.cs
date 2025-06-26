@@ -7,19 +7,6 @@ public class salaEscape
     private List<string> pista;
     [JsonProperty]
     public int nroSala;
-
-    public string ObjectToString<T>(T? obj)
-    {
-        return JsonConvert.SerializeObject(obj);
-    }
-    public T? StringToobject<T>(string txt)
-    {
-        if (string.IsNullOrEmpty(txt))
-            return default;
-        else
-            return JsonConvert.DeserializeObject<T>(txt);
-    }
-
     public void inicializarJuego()
     {
         rtasCorrectas = new List<string>();
@@ -31,9 +18,15 @@ public class salaEscape
         pista.Add("“No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.”");
         rtasCorrectas.Add("a");
         pista.Add("Debes encontrar una herramienta que lo ayude a escapar");
-        rtasCorrectas.Add("0x32");
-        pista.Add("La respuesta debe estar escrita en hexadecimal y minuscula");
-
+        rtasCorrectas.Add("50");
+        pista.Add("Debes poner el numero en decimal de la fila que coincida el numero de la izquierda con el de la derecha");
+        rtasCorrectas.Add("salir");
+        pista.Add("No te olvides que homero no es muy inteligente! La hoja puede no estar bien acomodada...");
+        rtasCorrectas.Add("final");
+        pista.Add("No muestro");
+        rtasCorrectas.Add("final");
+        pista.Add("No muestro");
+        
     }
     public string sacarHora(){
         return DateTime.Now.ToString("HHmm");

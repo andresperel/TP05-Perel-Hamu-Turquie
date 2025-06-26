@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "sala7";
+}
+<section class = "sala7">
+<h1>GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL! El manchester city de Bart Simpson es campeón de la Champions League</h1>
+@if(!ViewBag.pidioPista){
+    <a href='@Url.Action("jugar","Home", new {intento="terminar", pidioPista=true})'> Continuar</a>
+}
+else
+{
+    <a href='@Url.Action("Index","Home")'> Volver al inicio</a>
+}
+</section>

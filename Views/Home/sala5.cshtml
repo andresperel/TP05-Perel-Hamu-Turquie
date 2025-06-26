@@ -5,7 +5,15 @@
 
 <h1>Tras el corte de luz, Homero está a solo un paso de salir, debe adivinar la siguiente frase para desbloquear la seguridad de la puerta secreta. ¡Pronto verá a Bart!</h1>
 
-
 <a href='@Url.Action("jugar","Home", new {pidioPista=true})'> Pista</a>
 @if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
+
+<img src="/imagenes/codigo.jpg" alt="imagen codigo"/>
+<img src="/imagenes/resolucion.png" alt="Codigo a resolver"/>
+
+<form action='@Url.Action("jugar", "Home", new {pidioPista=false})' method="POST" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="intento"/>
+    <input type="submit" name="Guardar"/>
+</form>
+
 </section>
