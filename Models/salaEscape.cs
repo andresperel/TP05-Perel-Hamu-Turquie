@@ -18,8 +18,8 @@ public class salaEscape
         pista.Add("“No hablo, pero digo la verdad, no miento, pero te muestro lo que tú me das.”");
         rtasCorrectas.Add("a");
         pista.Add("Debes encontrar una herramienta que lo ayude a escapar");
-        rtasCorrectas.Add("50");
-        pista.Add("Debes poner el numero en decimal de la fila que coincida el numero de la izquierda con el de la derecha");
+        rtasCorrectas.Add("32");
+        pista.Add("El número del cable a cortar debe estar representado en hexadecimal");
         rtasCorrectas.Add("salir");
         pista.Add("No te olvides que homero no es muy inteligente! La hoja puede no estar bien acomodada...");
         rtasCorrectas.Add("final");
