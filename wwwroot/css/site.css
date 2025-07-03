@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
   min-height: 100%;
@@ -7,43 +13,49 @@ html {
   html {
     font-size: 16px;
   }
-* {
-    box-sizing: border-box;
-  }
 }
-main{
-  padding:0%;
-  margin:0%;
+
+header {
+  display: none;
 }
-html, body{
+
+main {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-header, footer{
-  width:0;
-  height:0;
-}
-h3{
+
+h3 {
   font-size: 25px;
   color: white;
 }
-.creditos{
+
+.creditos {
   background-color: darkgrey;
+  height:100vh;
 }
-.creditos div{
+
+.creditos div {
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 11.5%;
 }
-.creditos div img{
-  height:300px;
-  width:auto;
+
+.creditos div img {
+  height: 400px;
+  width: auto;
   border-radius: 10px 10px;
 }
-.creditos div h2{
+
+.creditos div h2 {
   text-align: center;
 }
-section a{
+
+section a {
   color: white;
   background-color: darkgrey;
   padding: 0.5%;
@@ -57,264 +69,276 @@ section a{
   display: inline-block;
   text-align: center;
 }
-section form{
-  color:white;
-  font-size: 20px;
 
+section form {
+  color: white;
+  font-size: 20px;
 }
-.creditos h1{
+
+.creditos h1 {
   text-align: center;
-  color:white;
+  color: white;
   font-size: 35px;
 }
-.fin{
+
+.fin {
   background-image: url('../imagenes/fondoFin.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.Index{
+.Index {
   background-image: url('../imagenes/fondoIndex.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;}
-.Index h1{
-  Color:white;
+  min-height: 100vh;
+}
+
+.Index h1 {
+  color: white;
   font-size: 50px;
   background-color: darkgrey;
   border-radius: 20px 20px;
-  padding:1.5%;
+  padding: 1.5%;
   width: 70%;
-  margin-left:15%;
+  margin-left: 15%;
 }
-.Index a{
+
+.Index a {
   display: inline-block;
   margin-right: 0%;
   margin-left: 27%;
   margin-bottom: 5%;
 }
 
-.intro{
+.intro {
   background-image: url('../imagenes/fondoIntro.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.intro p{
-  width:80%;
+
+.intro p {
+  width: 80%;
   background-color: darkgrey;
-  padding:1.5%;
+  padding: 1.5%;
   border-radius: 20px 20px;
   text-decoration: none;
-  color:white;
+  color: white;
   margin-left: 10%;
   font-size: 30px;
 }
-.intro a{
+
+.intro a {
   display: inline-block;
   margin-right: 0%;
   margin-left: 27%;
   margin-bottom: 5%;
 }
-.sala1{
+
+.sala1 {
   background-image: url('../imagenes/fondoSala1.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.sala1 h1
-{
-  width:80%;
+
+.sala1 h1 {
+  width: 80%;
   background-color: darkgrey;
-  padding:1.5%;
+  padding: 1.5%;
   border-radius: 20px 20px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-left: 10%;
   font-size: 30px;
 }
-.sala2{
+
+.sala2 {
   background-image: url('../imagenes/fondoSala2.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.sala2 h1
-{
-  width:80%;
+
+.sala2 h1 {
+  width: 80%;
   background-color: darkgrey;
-  padding:1.5%;
+  padding: 1.5%;
   border-radius: 20px 20px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-left: 10%;
   font-size: 30px;
   text-align: center;
 }
-.sala3{
+
+.sala3 {
   background-image: url('../imagenes/fondoSala3.jpg');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.sala3 .imagenes a{
+
+.sala3 .imagenes a {
   background: none;
-  padding:0;
-  float:left;
+  padding: 0;
+  float: left;
   border: none;
 }
+
 .img-jabon {
   display: block;
   margin: 0 auto;
-  margin-left: -800px; 
+  margin-left: -800px;
 }
+
 .img-matafuegos {
   margin: 0 auto;
   float: left;
-  margin-left: -110px; 
+  margin-left: -110px;
 }
+
 .img-cepillo {
   display: block;
   margin: 0 auto;
-  margin-left: 900px; 
+  margin-left: 900px;
 }
+
 .img-tijera {
   display: block;
   margin: 0 auto;
-  margin-left: 500px; 
+  margin-left: 500px;
 }
+
 .img-pinza {
   display: block;
   margin: 0 auto;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
+
 .img-parlante {
   display: block;
   margin: 0 auto;
-  margin-left: -600px; 
+  margin-left: -600px;
 }
-.sala3 a img:hover{
-  width: 50%;  
+
+.sala3 a img:hover {
+  width: 50%;
 }
-.sala3 img{
+
+.sala3 img {
   width: 40%;
 }
 
-.sala3 h3{
+.sala3 h3 {
   color: white;
 }
-.sala4{
+
+.sala4 {
   background-color: black;
-  height:100vh;
+  min-height: 100vh;
 }
-.sala4 img{
-  width:30%;
-  margin-left:35%;
+
+.sala4 img {
+  width: 30%;
+  margin-left: 35%;
 }
-.sala4 form{
+
+.sala4 form {
   margin-left: 45%;
 }
-.sala4 h1
-{
-  width:80%;
+
+.sala4 h1 {
+  width: 80%;
   background-color: darkgrey;
-  padding:1.5%;
+  padding: 1.5%;
   border-radius: 20px 20px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-left: 10%;
   font-size: 30px;
   text-align: center;
 }
-.sala5{
+
+.sala5 {
   background-image: url('../imagenes/fondoSala5.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.sala5 h1
-{
-  width:80%;
+
+.sala5 h1 {
+  width: 80%;
   background-color: darkgrey;
-  padding:1.5%;
+  padding: 1.5%;
   border-radius: 20px 20px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   margin-left: 10%;
   font-size: 30px;
   text-align: center;
 }
-.sala5 form{
+
+.sala5 form {
   margin-left: 45%;
 }
-.sala5 img{
+
+.sala5 img {
   margin-left: 20%;
 }
-.sala6{
+.sala5 .resolver{
+  margin-left: 5%;
+}
+
+.sala6 {
   background-image: url('../imagenes/fondoSala6.png');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-.sala6 h1
-{
-  width:20%;
+
+.sala6 h1 {
+  width: 20%;
   background-color: darkgrey;
-  padding:1.5%;
+  padding: 1.5%;
   border-radius: 20px 20px;
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
-.sala7{
+
+.sala7 {
   background-image: url('../imagenes/FondoFin.jpg');
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-}
-footer{
-  margin-top: 10px;
-  padding: 10px;
-  background-color: rgb(233, 231, 231);
-  border-top: 1px solid #e9ecef;
-}
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: rgb(233, 231, 231);
-  border-top: 1px solid #e9ecef;
-}
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: rgb(233, 231, 231);
-  border-top: 1px solid #e9ecef;
+  min-height: 100vh;
 }

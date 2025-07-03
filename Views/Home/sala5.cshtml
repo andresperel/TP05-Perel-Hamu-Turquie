@@ -9,7 +9,7 @@
 @if(ViewBag.pidioPista){<h3>@ViewBag.pista</h3>}
 
 <img src="/imagenes/codigo.jpg" alt="imagen codigo"/>
-<img src="/imagenes/resolucion.png" alt="Codigo a resolver"/>
+<img class="resolver" src="/imagenes/resolucion.png" alt="Codigo a resolver"/>
 
 <form action='@Url.Action("jugar", "Home", new {pidioPista=false})' method="POST" enctype="application/x-www-form-urlencoded">
     <input type="text" name="intento"/>
